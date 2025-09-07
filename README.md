@@ -19,7 +19,7 @@ A web-based word game where players test their vocabulary by guessing missing le
 
 ## 📁 Project Structure
 ```
-missing-letter-game/
+PHP_LETTER_GUESSING_GAME/
 ├── admin/                 # Admin functionality
 │   ├── adminD.php        # Admin dashboard
 │   └── AdminLogin.php    # Admin login page
@@ -80,4 +80,5 @@ missing-letter-game/
 - This project is licensed under the MIT License - see the 'LICENSE' file for details.
 
    
+
 
