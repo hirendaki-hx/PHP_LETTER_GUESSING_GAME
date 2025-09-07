@@ -1,72 +1,37 @@
-# ==============================================
-# MISSING LETTER GAME .gitignore FILE
-# ==============================================
+# Basic PHP .gitignore for custom projects
 
-# 🚫 IGNORE SENSITIVE DATA (NEVER COMMIT THESE!)
-# ==============================================
-.env                   # Environment variables with passwords
-.env.local             # Local environment overrides
-.env.production        # Production environment
-config.php             # Configuration with database credentials
-database.php           # Database configuration
-*.env                  # Any environment files
-secrets/               # Folder for secret files
+# Environment files (never commit these!)
+.env
+.env.*
+!.env.example
 
-# 🚫 IGNORE DEPENDENCIES (CAN BE REINSTALLED)
-# ==============================================
-vendor/                 # Composer dependencies (PHP packages)
-node_modules/           # npm dependencies (JavaScript packages)
-composer.lock           # Composer lock file (will be regenerated)
-package-lock.json       # npm lock file (will be regenerated)
-yarn.lock               # Yarn lock file
+# Dependency directories
+/vendor/
+/node_modules/
 
-# 🚫 IGNORE TEMPORARY & CACHE FILES
-# ==============================================
-cache/                  # Application cache
-tmp/                    # Temporary files
-sessions/               # PHP session files
-*.tmp                   # Temporary files
-*.temp                  # Temporary files
-*.cache                 # Cache files
+# Log files
+*.log
+logs/
 
-# 🚫 IGNORE LOG FILES (GENERATED AUTOMATICALLY)
-# ==============================================
-*.log                   # Log files
-logs/                   # Log directory
-error_log               # PHP error log
-php_errors.log          # PHP errors
+# Temporary files
+cache/
+tmp/
+*.tmp
 
-# 🚫 IGNORE SYSTEM & IDE FILES (PERSONAL PREFERENCES)
-# ==============================================
-.DS_Store               # macOS system file
-Thumbs.db               # Windows thumbnail cache
-._*                     # macOS resource fork files
-*.swp                   # Vim swap files
-*.swo                   # Vim swap files
-.idea/                  # PHPStorm IDE files
-.vscode/                # VS Code IDE files
-*.sublime-*             # Sublime Text files
+# System files
+.DS_Store
+Thumbs.db
 
-# 🚫 IGNORE UPLOADED CONTENT (IF ANY)
-# ==============================================
-uploads/                # User uploaded files
-storage/                # Storage files (if any)
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
 
-# 🚫 IGNORE BACKUPS & DATABASE DUMPS
-# ==============================================
-*.sql                   # SQL dump files
-*.backup                # Backup files
-*.bak                   # Backup files
+# Local configuration files (create these from examples)
+config.php
+database.php
 
-# ✅ KEEP THESE (DO NOT IGNORE)
-# ==============================================
-!.gitignore             # Keep this file
-!README.md              # Keep README
-!composer.json          # Keep composer.json if you have it
-!package.json           # Keep package.json if you have it
-!config.example.php     # Keep example config files
-!.env.example           # Keep example environment file
-
-# ==============================================
-# END OF .gitignore
-# ==============================================
+# OS generated files
+ehthumbs.db
+Folder.jpg
