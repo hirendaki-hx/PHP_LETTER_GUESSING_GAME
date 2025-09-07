@@ -54,29 +54,30 @@ missing-letter-game/
 
 ### Installation
 
-## 1. **Clone the repository**
+### 1. **Clone the repository**
    ```bash
    git clone https://github.com/your-username/PHP-projects.git
    cd PHP-projects/missing-letter-game
    ```
-## 2. Set up the database
+### 2. Set up the database
 - Create a MySQL database named 'missing_letter_game'
 - Import the SQL schema from 'database/schema.sql'
 
-## 3. Configure the application
+### 3. Configure the application
 - Copy 'includes/config-sample.php' to 'includes/config.php'
 - Update database credentials in 'includes/config.php'
 
-## 4. Access the application
+### 4. Access the application
 - Open your web browser
 - Navigate to 'http://localhost/missing-letter-game/pages/'
 
-### 🛠️ Adding New Words
+## 🛠️ Adding New Words
 - Edit the '$words array' in 'games/G_Letter.php':
    ```
    $words = ["cat", "sun", "puzzle", "guitar", "labyrinth", "cryptography"];
    ```
-### 📝 License
+## 📝 License
 - This project is licensed under the MIT License - see the 'LICENSE' file for details.
 
    
+
